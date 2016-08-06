@@ -63,8 +63,13 @@
       <li><a href="#">Средства ухода</a></li>
     </ul>
 
-    <h2>ПРОИЗВОДИТЕЛИ:</h2>
+    <!-- Фильтр товаров -->
+    <!-- Есть идея поместить эти две группы филтров в разные fieldset'ы а заместо h2 использовать legend -->
+
+
     <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+      <h2>ПРОИЗВОДИТЕЛИ:</h2>
+
       <input type="checkbox" id="baxter-of-california" name="baxter-of-california">
       <label for="baxter-of-california">Baxter of California</label>
       <input type="checkbox" id="mr-natty" name="mr-natty">
@@ -88,6 +93,9 @@
       <label for="accessories">Аксессуары</label>
       <button class="btn" type="submit">Показать</button>
     </form>
+
+    <!-- Каталог товаров -->
+
 
     <div class="catalog">
       <article class="catalog-item">
@@ -139,6 +147,52 @@
         </figure>
       </article>
     </div>
+
+    <!-- Навигация по каталогу -->
+
+    <div class="navigator">
+      <a href="#1">1</a>
+      <a class='active' href="#2">2</a>
+      <a href="#3">3</a>
+      <a href="#4">4</a>
+    </div>
   </main>
+
+   <!--====  End of MAIN  ====-->
+
+   <!--============================
+    =            FOOTER            =
+    =============================-->
+
+    <!-- Контакты -->
+
+    <footer class="main-footer">
+      <div class="container">
+        <section class="footer-contacts">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          <a href="#">Как нас найти?</a><br>
+          Телефон: +7 (812) 666-02-66
+        </section>
+
+    <!-- Социальный блок -->
+
+        <section class="footer-social">
+          <p>Давайте дружить!</p>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+
+    <!-- Блок разработчика -->
+
+        <section class="footer-copyright">
+          <p>Разработано:</p>
+          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+        </section>
+      </div>
+    </footer>
+
+    <!--====  End of FOOTER  ====-->
 </body>
 </html>
