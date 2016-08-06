@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop</title>
+</head>
+<body>
+  <!--============================
+  =            HEADER            =
+  =============================-->
+
+  <header class="main-header">
+    <div class="container">
+
+      <!-- ЛОГО -->
+
+      <img class="logo" src="http://placehold.it/111x24" alt="logo" width="111" height="24">
+
+      <!-- Главное меню -->
+
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="#">Прайс-лист</a>
+          </li>
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Блок Пользователя -->
+
+      <div class="user-block">
+        <a href="#" class="login">Вход</a>
+      </div>
+    </div>
+  </header>
+
+  <!--====  End of HEADER  ====-->
+
+  <!--==========================
+  =            MAIN            =
+  ===========================-->
+
+  <main class="container">
+    <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
+
+    <!-- BREADCRUMB -->
+
+    <ul class="breadcrumb">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Магазин</a></li>
+      <li><a href="#">Средства ухода</a></li>
+    </ul>
+
+    <h2>ПРОИЗВОДИТЕЛИ:</h2>
+    <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+      <input type="checkbox" id="baxter-of-california" name="baxter-of-california">
+      <label for="baxter-of-california">Baxter of California</label>
+      <input type="checkbox" id="mr-natty" name="mr-natty">
+      <label for="mr-natty">Mr Natty</label>
+      <input type="checkbox" id="suavecito" name="suavecito">
+      <label for="suavecito">Suavecito</label>
+      <input type="checkbox" id="malin-goetz" name="malin-goetz">
+      <label for="malin-goetz">Malin+Goetz</label>
+      <input type="checkbox" id="murrays" name="murrays">
+      <label for="murrays">Murray’s</label>
+      <input type="checkbox" id="american-crew" name="american-crew">
+      <label for="american-crew">American Crew</label>
+    </form>
+
+    <h2>ГРУППЫ ТОВАРОВ:</h2>
+    <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+      <input type="radio" name="product-group-name" id="shaving-stuff" value="shaving-stuff">
+      <label for="shaving-stuff">Бритвенные принадлежности</label>
+      <input type="radio" name="product-group-name" id="care-stuff" value="care-stuff">
+      <label for="">Средства для ухода</label>
+      <input type="radio" name="product-group-name" id="accessories" value="accessories">
+      <label for="accessories">Аксессуары</label>
+    </form>
+  </main>
+</body>
+</html>
