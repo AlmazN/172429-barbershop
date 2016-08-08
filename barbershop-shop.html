@@ -5,18 +5,10 @@
   <title>Shop</title>
 </head>
 <body>
-  <!--============================
-  =            HEADER            =
-  =============================-->
-
   <header class="main-header">
     <div class="container">
 
-      <!-- ЛОГО -->
-
       <a href='index.html'><img class="logo" src="http://placehold.it/111x24" alt="logo" width="111" height="24"></a>
-
-      <!-- Главное меню -->
 
       <nav class="main-navigation">
         <ul>
@@ -38,24 +30,14 @@
         </ul>
       </nav>
 
-      <!-- Блок Пользователя -->
-
       <div class="user-block">
         <a href="#" class="login">Вход</a>
       </div>
     </div>
   </header>
 
-  <!--====  End of HEADER  ====-->
-
-  <!--==========================
-  =            MAIN            =
-  ===========================-->
-
   <main class="container">
-    <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
-
-    <!-- BREADCRUMB -->
+    <h1>Средства для ухода</h1>
 
     <ul class="breadcrumb">
       <li><a href="#">Главная</a></li>
@@ -63,35 +45,33 @@
       <li>Средства ухода</li>
     </ul>
 
-    <!-- Фильтр товаров -->
-    <!-- Есть идея поместить эти две группы филтров в разные fieldset'ы а заместо h2 использовать legend -->
-
-
     <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
-      <h2>ПРОИЗВОДИТЕЛИ:</h2>
+      <div class="catalog-filter-checkbox">
+      <h2>Производители:</h2>
+        <input type="checkbox" id="baxter-of-california" name="baxter-of-california">
+        <label for="baxter-of-california">Baxter of California</label>
+        <input type="checkbox" id="mr-natty" name="mr-natty">
+        <label for="mr-natty">Mr Natty</label>
+        <input type="checkbox" id="suavecito" name="suavecito">
+        <label for="suavecito">Suavecito</label>
+        <input type="checkbox" id="malin-goetz" name="malin-goetz">
+        <label for="malin-goetz">Malin+Goetz</label>
+        <input type="checkbox" id="murrays" name="murrays">
+        <label for="murrays">Murray’s</label>
+        <input type="checkbox" id="american-crew" name="american-crew">
+        <label for="american-crew">American Crew</label>
+      </div>
 
-      <input type="checkbox" id="baxter-of-california" name="baxter-of-california">
-      <label for="baxter-of-california">Baxter of California</label>
-      <input type="checkbox" id="mr-natty" name="mr-natty">
-      <label for="mr-natty">Mr Natty</label>
-      <input type="checkbox" id="suavecito" name="suavecito">
-      <label for="suavecito">Suavecito</label>
-      <input type="checkbox" id="malin-goetz" name="malin-goetz">
-      <label for="malin-goetz">Malin+Goetz</label>
-      <input type="checkbox" id="murrays" name="murrays">
-      <label for="murrays">Murray’s</label>
-      <input type="checkbox" id="american-crew" name="american-crew">
-      <label for="american-crew">American Crew</label>
-
-      <h2>ГРУППЫ ТОВАРОВ:</h2>
-
-      <input type="radio" name="product-group-name" id="shaving-stuff" value="shaving-stuff">
-      <label for="shaving-stuff">Бритвенные принадлежности</label>
-      <input type="radio" name="product-group-name" id="care-stuff" value="care-stuff">
-      <label for="care-stuff">Средства для ухода</label>
-      <input type="radio" name="product-group-name" id="accessories" value="accessories">
-      <label for="accessories">Аксессуары</label>
-      <button class="btn" type="submit">Показать</button>
+      <div class="catalog-filter-radio">
+      <h2>Группы товаров:</h2>
+        <input type="radio" name="product-group-name" id="shaving-stuff" value="shaving-stuff">
+        <label for="shaving-stuff">Бритвенные принадлежности</label>
+        <input type="radio" name="product-group-name" id="care-stuff" value="care-stuff">
+        <label for="care-stuff">Средства для ухода</label>
+        <input type="radio" name="product-group-name" id="accessories" value="accessories">
+        <label for="accessories">Аксессуары</label>
+        <button class="btn" type="submit">Показать</button>
+      </div>
     </form>
 
     <!-- Каталог товаров -->
@@ -103,48 +83,48 @@
           <img src="http://placehold.it/220x165" alt="Набор для путешествий «Baxter of California»" width="220" height="165">
           <figcaption><a href="#">Набор для путешествий «Baxter of California»</a></figcaption>
         </figure>
-        <span class="price">2 900 РУБ.</span>
-        <a href="#" class="btn">КУПИТЬ</a>
+        <span class="price">2 900 руб.</span>
+        <a href="#" class="btn">Купить</a>
       </article>
       <article class="catalog-item">
         <figure>
           <img src="http://placehold.it/220x165" alt="Увлажняющий кондиционер «Baxter of California»" width="220" height="165">
           <figcaption><a href="#">Увлажняющий кондиционер «Baxter of California»</a></figcaption>
         </figure>
-        <span class="price">750 РУБ.</span>
-        <a href="#" class="btn">КУПИТЬ</a>
+        <span class="price">750 руб.</span>
+        <a href="#" class="btn">Купить</a>
       </article>
       <article class="catalog-item">
         <figure>
           <img src="http://placehold.it/220x165" alt="Гель для волос «SUAVECITO»" width="220" height="165">
-          <figcaption><a href="#">Гель для волос «SUAVECITO»</a></figcaption>
+          <figcaption><a href="#">Гель для волос «Suavecito»</a></figcaption>
         </figure>
-        <span class="price">290 РУБ.</span>
-        <a href="#" class="btn">КУПИТЬ</a>
+        <span class="price">290 руб.</span>
+        <a href="#" class="btn">Купить</a>
       </article>
       <article class="catalog-item">
         <figure>
           <img src="http://placehold.it/220x165" alt="Глина для укладки волос «American crew»" width="220" height="165">
           <figcaption><a href="#">Глина для укладки волос «American crew»</a></figcaption>
         </figure>
-        <span class="price">500 РУБ.</span>
-        <a href="#" class="btn">КУПИТЬ</a>
+        <span class="price">500 руб.</span>
+        <a href="#" class="btn">Купить</a>
       </article>
       <article class="catalog-item">
         <figure>
           <img src="http://placehold.it/220x165" alt="Гель для волос «AMERICAN CREW»" width="220" height="165">
-          <figcaption><a href="#">Гель для волос«AMERICAN CREW»</a></figcaption>
+          <figcaption><a href="#">Гель для волос«American Crew»</a></figcaption>
         </figure>
-        <span class="price">300 РУБ.</span>
-        <a href="#" class="btn">КУПИТЬ</a>
+        <span class="price">300 руб.</span>
+        <a href="#" class="btn">Купить</a>
       </article>
       <article class="catalog-item">
         <figure>
           <img src="http://placehold.it/220x165" alt="Набор для бритья «Baxter of California»" width="220" height="165">
           <figcaption><a href="#">Набор для бритья «Baxter of California»</a></figcaption>
         </figure>
-        <span class="price">3 900 РУБ.</span>
-        <a href="#" class="btn">КУПИТЬ</a>
+        <span class="price">3 900 руб.</span>
+        <a href="#" class="btn">Купить</a>
       </article>
     </div>
 
@@ -152,7 +132,7 @@
 
     <div class="navigator">
       <a href="#1">1</a>
-      <a class='active' href="#2">2</a>
+      <a class="active" href="#2">2</a>
       <a href="#3">3</a>
       <a href="#4">4</a>
     </div>
